@@ -7,8 +7,8 @@ import CoverLetter from "./components/CoverLetter/CoverLetter";
 function App() {
   return (
     <div className="App">
-      <CoverLetter />
-      {/* <MockInterview/> */}
+      {/* <CoverLetter /> */}
+      <MockInterview/>
     </div>
   );
 }

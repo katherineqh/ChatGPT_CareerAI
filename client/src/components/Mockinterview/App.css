@@ -9,7 +9,7 @@
 .sidemenu {
   width:260px;
   padding:10px;
-  background-color:#202123;
+  background-color:#d0d5df;
 }
 /* under 640px do this */
 @media (max-width: 640px) {

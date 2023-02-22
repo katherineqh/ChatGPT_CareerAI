@@ -11,13 +11,12 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const getCoverLetter1=async (req, res) => {
+const mockInterview=async (req, res) => {
   const {message}=req.body || ''
 
    
 
-  const basePromptPrefix = `Write a cover letter for a  ${message} role 
- about 180   words  The cover letter should be described in a way that is SEO friendly, highlighting its unique features and benefits.`;
+  const basePromptPrefix = `I want you to act as an interviewer. I am  will be the candidate and you will ask me the interview questions for the position position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers .what is your first question?`;
  try {
   
  
@@ -51,4 +50,4 @@ const getCoverLetter1=async (req, res) => {
  
 
 
-module.exports = { getCoverLetter1 };
+module.exports = { mockInterview};
